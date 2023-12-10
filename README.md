@@ -19,14 +19,26 @@ Tweezer requires [Ghidra](https://ghidra-sre.org/) to be installed, and for ```a
 
 ```
 pip install -r requirements.txt
+python setup.py install
 ```
 
 ## Running
 Depending on if you already have a trained model/ map of vectors you may decide to run Tweezer in one of two ways, either 1) to train a new model/ extend an existing model or 2) to run Tweezer against a decompiled function or binary. 
 
-### Training / Extending 
+### Training/ Extending the Model
+```bash
+python tweezer --model-path <model-path> --binary-locations <binary-folder-1> <binary-folder-2>...
+```
 
+### Finding Closest Functions
+```bash
+python tweezer --model-path <model-path> --function <path-to-decompiled-function>
+```
 
+### Building Function Name Map
+```bash
+python tweezer --model-path <model-path> --binary <path-to-binary>
+```
 
 # 🙏 Contributions
 Tweezer is an open-source project and welcomes contributions from the community. If you would like to contribute to Tweezer, please follow these guidelines:
