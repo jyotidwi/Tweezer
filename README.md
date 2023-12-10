@@ -13,6 +13,21 @@
 
 </div>
 
+# ⚙️ Setup
+## Dependancies
+Tweezer requires [Ghidra](https://ghidra-sre.org/) to be installed, and for ```analyzeHeadless``` to be on your path. If it is not on your path Tweezer will request on run where the binary is located. To install all other dependancies use the ```requirements.txt``` file, with:
+
+```
+pip install -r requirements.txt
+```
+
+## Running
+Depending on if you already have a trained model/ map of vectors you may decide to run Tweezer in one of two ways, either 1) to train a new model/ extend an existing model or 2) to run Tweezer against a decompiled function or binary. 
+
+### Training / Extending 
+
+
+
 # 🙏 Contributions
 Tweezer is an open-source project and welcomes contributions from the community. If you would like to contribute to Tweezer, please follow these guidelines:
 
