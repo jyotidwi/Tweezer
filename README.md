@@ -1,5 +1,5 @@
 <p align="center">
-    <img width=100% src="/assets/cover.png">
+    <img width=100% src="cover.png">
   </a>
 </p>
 <p align="center"> 🤖 Binary Analysis, Function Finding ⚙️ </b> </p>
