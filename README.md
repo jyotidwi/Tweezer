@@ -12,7 +12,10 @@
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P7C2MM6)
 
 </div>
-Tweezer is a practical tool designed for those diving into compiled code. Its goal is straightforward: to uncover unknown function names in binaries. The magic happens through a blend of Ghidra for solid decompilation and common machine learning tricks. With Tweezer, you can train it by feeding it binary files, allowing it to extract and analyze decompiled functions. These functions are then transformed into vectors using Word2Vec for cross-referencing. 
+
+* **💡 Practical:** Tweezer is designed to support with navigating through compiled code, and supporting predicting function names in stripped binaries.
+* **🛠️ Ghidra Integration:** Tweezer utilises Ghidra for decompilation.
+* **🤖 Machine Learning:** Utilising Word2Vec to build a picture of decompiled code.
 
 Word2Vec is a widely used technique in natural language processing (NLP) for converting words into dense vectors that capture semantic relationships between words. The underlying idea is rooted in the distributional hypothesis, which poses that words appearing in similar contexts tend to have similar meanings. In the context of Tweezer, Word2Vec is employed to vectorize decompiled code snippets. During the training phase, the model learns to represent words (in this case, decompiled pseudo C) as vectors in a continuous vector space. These vectors preserve the syntactic and semantic information of the corresponding words, enabling the model to understand relationships between different functions based on their co-occurrence patterns. Consequently, when Tweezer encounters a decompiled function, it uses the trained Word2Vec model to convert the code into vectors. By comparing these vectors, Tweezer can identify and retrieve functions with similar code structures, aiding in the task of finding the closest functions in terms of code similarity. 
 
