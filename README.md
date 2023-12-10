@@ -33,17 +33,17 @@ Depending on if you already have a trained model/ map of vectors you may decide 
 
 ### Training/ Extending the Model
 ```bash
-python tweezer --model-path <model-path> --binary-locations <binary-folder-1> <binary-folder-2>...
+tweezer --model-path <model-path> --binary-locations <binary-folder-1> <binary-folder-2>...
 ```
 
 ### Finding Closest Functions
 ```bash
-python tweezer --model-path <model-path> --function <path-to-decompiled-function>
+tweezer --model-path <model-path> --function <path-to-decompiled-function>
 ```
 
 ### Building Function Name Map
 ```bash
-python tweezer --model-path <model-path> --binary <path-to-binary>
+tweezer --model-path <model-path> --binary <path-to-binary>
 ```
 
 # 🙏 Contributions
