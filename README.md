@@ -13,9 +13,9 @@
 
 </div>
 
-* **💡 Practical:** Tweezer is designed to support with navigating through compiled code, and supporting predicting function names in stripped binaries.
+* **💡 Practical:** Tweezer aids in navigating compiled code and predicting function names in stripped binaries.
 * **🛠️ Ghidra Integration:** Tweezer utilises Ghidra for decompilation.
-* **🤖 Machine Learning:** Utilising Word2Vec to build a picture of decompiled code.
+* **🤖 Machine Learning:** Utilising Word2Vec to build comparisons between functions.
 
 Word2Vec is a widely used technique in natural language processing (NLP) for converting words into dense vectors that capture semantic relationships between words. The underlying idea is rooted in the distributional hypothesis, which poses that words appearing in similar contexts tend to have similar meanings. In the context of Tweezer, Word2Vec is employed to vectorize decompiled code snippets. During the training phase, the model learns to represent words (in this case, decompiled pseudo C) as vectors in a continuous vector space. These vectors preserve the syntactic and semantic information of the corresponding words, enabling the model to understand relationships between different functions based on their co-occurrence patterns. Consequently, when Tweezer encounters a decompiled function, it uses the trained Word2Vec model to convert the code into vectors. By comparing these vectors, Tweezer can identify and retrieve functions with similar code structures, aiding in the task of finding the closest functions in terms of code similarity. 
 
