@@ -1,8 +1,8 @@
 <p align="center">
-    <img width=100% src="tweezer.png">
+    <img width=100% src="tweezer.gifg">
   </a>
 </p>
-<p align="center"> 🤖 Binary Analysis, Function Finding ⚙️ </b> </p>
+<p align="center"> 🤖 Binary Analysis, Function Name Finding ⚙️ </b> </p>
 
 <div align="center">
 
