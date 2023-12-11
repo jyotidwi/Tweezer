@@ -1,5 +1,5 @@
 <p align="center">
-    <img width=100% src="tweezer.gifg">
+    <img width=100% src="Tweezer.gif">
   </a>
 </p>
 <p align="center"> 🤖 Binary Analysis, Function Name Finding ⚙️ </b> </p>
